@@ -1,3 +1,9 @@
+.resp, main > * img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /*variablen*/
 .tthome {
   display: grid;
@@ -48,10 +54,17 @@ main {
   grid-row: 2/3;
   grid-column: 1/2;
   background-color: #1b1b1b;
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-
+main > * {
+  flex-basis: 300px;
+  flex-grow: 1;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #7c0909;
+}
 aside {
   background-color: #090909;
   grid-row: 2/3;

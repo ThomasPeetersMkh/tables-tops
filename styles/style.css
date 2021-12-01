@@ -1,0 +1,36 @@
+/*variablen*/
+body {
+  display: grid;
+}
+
+header {
+  background-color: #1d1a11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+header h1 {
+  font-family: "M PLUS 1 Code";
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  text-transform: uppercase;
+  /*&::before{
+      content: "\e915";
+      font-family: "icomoon";
+  }*/
+}
+header nav ul {
+  display: flex;
+  gap: 5px;
+}
+header nav ul li a {
+  font-family: "M PLUS 1 Code";
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

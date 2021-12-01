@@ -1,0 +1,42 @@
+/*variablen*/
+$grey: #1d1a11;
+$sfont: 'M PLUS 1 Code';
+
+body{
+    display: grid;
+
+}
+
+header{
+    background-color: $grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    h1{
+        font-family: $sfont;
+        font-weight: 700;
+        font-size: 32px;
+        color: white;
+        text-transform: uppercase;
+        /*&::before{
+            content: "\e915";
+            font-family: "icomoon";
+        }*/
+    }
+    nav{
+        ul{
+            display: flex;
+            gap: 5px;
+            li{
+                a{
+                    font-family: $sfont;
+                    font-weight: 400;
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

@@ -1,18 +1,17 @@
-@mixin make-cols($base: 100px, $gap: 10px, $bw, $bc) {
-    display: flex;
-    flex-wrap: wrap;
+@mixin make-cols($gap: 10px, $bc) {
+    display: grid;
     gap: $gap;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     > * {
-      flex-basis: $base;
-      /*flex-grow: 1;*/
-      flex-shrink: 1;
-      border-width: $bw;
-      border-style: solid;
-      border-color: $bc;
-      max-height: 45%;
-        img{
+      background-color: $bc;
+        .imgHolder{
+          aspect-ratio: 16/9;
+          img{
             @extend .resp; 
-      }
+            object-fit: cover;
+          }
+        }
     }
   }
   

@@ -56,7 +56,6 @@ main{
     grid-row: 2/3;
     grid-column: 1/2;
     background-color: v.$mgray;
-    @include m.make-cols(300px,10px,6px,v.$bord)
 }
 
 aside{

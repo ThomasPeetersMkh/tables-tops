@@ -2,6 +2,7 @@
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 /*variablen*/
@@ -56,14 +57,16 @@ main {
   background-color: #1b1b1b;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
 }
 main > * {
   flex-basis: 300px;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
+  flex-shrink: 1;
   border-width: 6px;
   border-style: solid;
   border-color: #7c0909;
+  max-height: 45%;
 }
 aside {
   background-color: #090909;

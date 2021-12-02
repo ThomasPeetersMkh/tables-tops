@@ -4,12 +4,14 @@
     gap: $gap;
     > * {
       flex-basis: $base;
-      flex-grow: 1;
+      /*flex-grow: 1;*/
+      flex-shrink: 1;
       border-width: $bw;
       border-style: solid;
       border-color: $bc;
-      img {
-        @extend .resp;
+      max-height: 45%;
+        img{
+            @extend .resp; 
       }
     }
   }
